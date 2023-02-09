@@ -23,6 +23,8 @@ public class Main {
 
         System.out.println("After removing vertex: ");
 
+
+
         graph.removeVertex("A");
         graph.printGraph();
     }
