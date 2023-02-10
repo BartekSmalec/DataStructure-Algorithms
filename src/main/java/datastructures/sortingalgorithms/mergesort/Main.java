@@ -1,27 +1,14 @@
 package datastructures.sortingalgorithms.mergesort;
 
+import java.util.Arrays;
+
+import static datastructures.sortingalgorithms.mergesort.MergeSort.mergeSort;
+
 public class Main {
     public static void main(String[] args) {
-        int[] myArray = {12, 2, 22, 76, 34, 3, 7, 1};
+        int[] myArray = {3,20,6,4,7,8};
 
-    }
+        System.out.println(Arrays.toString(mergeSort(myArray)));
 
-    public static int[] merge(int[] arrayOne, int[] arrayTwo) {
-        int[] combined = new int[arrayOne.length + arrayTwo.length];
-        int index = 0;
-        int i = 0;
-        int j = 0;
-        while (i < arrayOne.length && j < arrayTwo.length) {
-            if (arrayOne[i] > arrayTwo[j]) {
-                combined[index] = arrayOne[i];
-                index++;
-                i++;
-            } else {
-                combined[index] = arrayOne[j];
-                index++;
-                j++;
-            }
-        }
-        return null;
     }
 }
