@@ -7,6 +7,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+
+
         List<Long> inputNumber = Arrays.asList(0L, 123L, 211L, 1234L, 123L, 22L);
 
         List<FactorialThread> threads = new ArrayList<>();
